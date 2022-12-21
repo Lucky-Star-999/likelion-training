@@ -184,19 +184,14 @@ SELECT 1 FROM DUAL
 
 
 -- Question 1: List all constraints in database
--- I created tables and constraints in Schema 'LINH_TEST_1', so the OWNER will be 'LINH_TEST_1'
 SELECT constraint_name, constraint_type FROM all_constraints
-WHERE OWNER = 'LINH_TEST_1'
-AND constraint_name NOT LIKE 'BIN$%'
-AND constraint_name NOT LIKE 'SYS_%'
+WHERE constraint_name NOT LIKE 'BIN$%' AND constraint_name NOT LIKE 'SYS_%'
 
 -- Question 2: List all tables in database
--- I created tables in Schema 'LINH_TEST_1', so the OWNER will be 'LINH_TEST_1'
-SELECT OWNER, TABLE_NAME FROM all_tables where OWNER = 'LINH_TEST_1';
+SELECT OWNER, TABLE_NAME FROM all_tables
 
 -- Question 3: List all sequences in database
--- I created sequences in Schema 'LINH_TEST_1', so the OWNER will be 'LINH_TEST_1'
-SELECT SEQUENCE_NAME FROM all_sequences where SEQUENCE_OWNER = 'LINH_TEST_1';
+SELECT SEQUENCE_NAME FROM all_sequences
 
 -- Question 4:
 SELECT
