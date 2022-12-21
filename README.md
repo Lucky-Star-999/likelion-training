@@ -1,1 +1,1 @@
-# likelion-training
+# LIKELION Training
