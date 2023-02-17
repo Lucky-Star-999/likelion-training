@@ -18,9 +18,4 @@ public class EmployeeDtoController {
     public EmployeeDto getEmployees(@RequestBody @Valid EmployeeDto employeeDto) {
         return employeeDtoService.getEmployeeDto(employeeDto);
     }
-
-    @GetMapping("")
-    public String hi() {
-        return "Hi";
-    }
 }

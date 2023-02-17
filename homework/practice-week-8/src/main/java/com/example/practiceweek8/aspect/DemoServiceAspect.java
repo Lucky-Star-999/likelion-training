@@ -26,6 +26,6 @@ public class DemoServiceAspect {
 
     @AfterThrowing("execution(* com.example.practiceweek8.controller.*.*(..))")
     public void afterThrowing(JoinPoint joinPoint) {
-        logger.info("Lỗi rồi nè ->" + joinPoint.toString());
+        logger.info("Lỗi rồi nè" + joinPoint.toString());
     }
 }

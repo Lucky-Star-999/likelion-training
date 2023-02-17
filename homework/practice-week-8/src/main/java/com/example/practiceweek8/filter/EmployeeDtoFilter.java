@@ -29,7 +29,6 @@ public class EmployeeDtoFilter implements Filter {
                     httpResponse.setHeader("Content-Type", "application/json");
                     PrintWriter out = httpResponse.getWriter();
                     out.println("Ban dang yeu cau tu Postman!");
-                    //httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN);
                 }
             }
         }
@@ -37,6 +36,6 @@ public class EmployeeDtoFilter implements Filter {
 
     @Override
     public void destroy() {
-        Filter.super.destroy();
+
     }
 }
