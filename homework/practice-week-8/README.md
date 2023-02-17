@@ -3,7 +3,7 @@
 ## Results
 ### Case 1
 **Case**: Email sai định dạng <br/> <br/>
-![Image 1](img-1.PNG)
+![Image 6](img-6.PNG)
 
 ### Case 2
 **Case**: Độ dài name không thỏa <br/> <br/>
