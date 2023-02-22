@@ -30,23 +30,13 @@ public class TutorialServiceImpl implements TutorialService {
     }
 
     @Override
-    public int deleteById(long id) {
-        try {
-            tutorialRepository.deleteById(id);
-            return 1;
-        } catch (Exception e) {
-            return 0;
-        }
+    public void deleteById(long id) {
+        tutorialRepository.deleteById(id);
     }
 
     @Override
-    public int deleteAll() {
-        try {
-            tutorialRepository.deleteAll();
-            return 1;
-        } catch (Exception e) {
-            return 0;
-        }
+    public void deleteAll() {
+        tutorialRepository.deleteAll();
     }
 
     @Override

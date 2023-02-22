@@ -11,9 +11,9 @@ public interface TutorialService {
 
     Tutorial findById(long id);
 
-    int deleteById(long id);
+    void deleteById(long id);
 
-    int deleteAll();
+    void deleteAll();
 
     List<Tutorial> findByPublished(boolean b);
 
