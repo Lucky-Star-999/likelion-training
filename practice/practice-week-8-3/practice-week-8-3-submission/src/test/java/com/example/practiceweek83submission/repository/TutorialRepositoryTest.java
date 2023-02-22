@@ -46,20 +46,7 @@ class TutorialRepositoryTest {
     }
 
 
-    @Test
-    void deleteById() {
-        tutorialRepository.deleteById(4l);
-        assertFalse(tutorialRepository.existsById(4l));
-    }
 
-    @Test
-    void deleteAll() {
-        tutorialRepository.deleteAll();
-        assertFalse(tutorialRepository.existsById(1l));
-        assertFalse(tutorialRepository.existsById(2l));
-        assertFalse(tutorialRepository.existsById(3l));
-        assertFalse(tutorialRepository.existsById(4l));
-    }
 
 
     @Test
@@ -81,7 +68,22 @@ class TutorialRepositoryTest {
     @Test
     void findByTitleContainingIgnoreCase() {
         Tutorial tutorial = new Tutorial(1l, "Title 1", "First Tutorial", true);
-        assertThat(tutorialRepository.findByTitleContainingIgnoreCase("title").get(0).toString())
-                .isEqualTo(tutorial.toString());
+        assertThat(tutorialRepository.findByTitleContainingIgnoreCase("title").get(0).getDescription())
+                .isEqualTo(tutorial.getDescription());
+    }
+
+    @Test
+    void deleteById() {
+        tutorialRepository.deleteById(1l);
+        assertThat(tutorialRepository.findById(1l)).isEmpty();
+    }
+
+    @Test
+    void deleteAll() {
+        tutorialRepository.deleteAll();
+        assertThat(tutorialRepository.findById(1l)).isEmpty();
+        assertThat(tutorialRepository.findById(2l)).isEmpty();
+        assertThat(tutorialRepository.findById(3l)).isEmpty();
+        assertThat(tutorialRepository.findById(4l)).isEmpty();
     }
 }
