@@ -48,12 +48,17 @@ class TutorialRepositoryTest {
 
     @Test
     void deleteById() {
-
+        tutorialRepository.deleteById(4l);
+        assertFalse(tutorialRepository.existsById(4l));
     }
 
     @Test
     void deleteAll() {
-
+        tutorialRepository.deleteAll();
+        assertFalse(tutorialRepository.existsById(1l));
+        assertFalse(tutorialRepository.existsById(2l));
+        assertFalse(tutorialRepository.existsById(3l));
+        assertFalse(tutorialRepository.existsById(4l));
     }
 
 
