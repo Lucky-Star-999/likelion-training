@@ -30,10 +30,10 @@ Truy vấn thông tin sức khỏe của ứng dụng <br/> <br/>
 ![Application Health](practice-week-8-3-submission/src/main/resources/static/img-7.PNG) <br/> <br/>
 
 Shutdown ứng dụng bằng actuator <br/> <br/>
-a. (Shutdown ứng dụng bằng Postman) <br/> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;a. (Shutdown ứng dụng bằng Postman) <br/> <br/>
 ![Shutdown by Postman](practice-week-8-3-submission/src/main/resources/static/img-8.PNG) <br/> <br/>
 
-b. (Kết quả shutdown) <br/> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;b. (Kết quả shutdown) <br/> <br/>
 ![Shutdown Console](practice-week-8-3-submission/src/main/resources/static/img-9.PNG) <br/> <br/>
 
 ### Bài 2-2: Sử dụng DevTools (hoặc Actuator) <br/>
