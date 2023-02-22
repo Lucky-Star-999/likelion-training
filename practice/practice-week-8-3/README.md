@@ -3,6 +3,9 @@
 ## Information
 **Full name**: Nguyễn Hoàng Linh
 
+## Bài làm
+Bài làm ở folder practice-week-8-3-submission
+
 ## Results
 ### Bài 1-1: Test case tầng Repository <br/>
 Cho deleteById() fail test case <br/> <br/>
