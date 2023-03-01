@@ -2,8 +2,6 @@ package com.example.hellowebsocket.model;
 
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 public class ChatMessage {
     private MessageType type;

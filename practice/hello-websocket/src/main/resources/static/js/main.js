@@ -49,9 +49,7 @@ function onMessageReceived(payload) {
     var message = JSON.parse(payload.body);
     if (message.type === 'JOIN') {
         message.content = message.sender + ' joined!';
-
-        console.log(message.chatHistoryList);
-        renderElement(message, 'event-message', null, null); // Render the "Join introduction first"
+        renderElement(message, 'event-message', null, null); // Render the "Join announcement first"
 
         // Render old messages
         if (username === message.sender) {
@@ -60,7 +58,6 @@ function onMessageReceived(payload) {
            }
         }
     } else if (message.type === 'LEAVE') {
-        //messageElement.classList.add('event-message');
         message.content = message.sender + ' left!';
 
         // Modify
@@ -79,7 +76,7 @@ function onMessageReceived(payload) {
     }
 }
 
-// Modify ...
+// Modify
 function renderElement(message, type, avatarElement, usernameElement) {
     var messageElement = document.createElement('li');
     messageElement.classList.add(type);
@@ -97,6 +94,7 @@ function renderElement(message, type, avatarElement, usernameElement) {
     messageArea.scrollTop = messageArea.scrollHeight;
 }
 
+// Modify
 function addMessage(message) {
     var avatarElement = document.createElement('i');
     var avatarText = document.createTextNode(message.sender[0]);
