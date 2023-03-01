@@ -62,3 +62,4 @@ Sau đó, ở client, **message** nhận được từ Spring Boot sẽ thay đ�
 File **main.js** sẽ sửa một số chỗ để nó có thể lấy được và xuất nội dung từ **chatHistoryList**
 
 ## Result
+![Result](src/main/resources/static/img-1.PNG)
