@@ -26,7 +26,7 @@ public class ChatHistoryList {
 private ChatHistoryList chatHistoryList;
 ```
 
-Class **ChatController** sẽ có một chút thay đổi khi ta add các message vào chatHistoryList mỗi khi ai đó gửi lên
+Class **ChatController** sẽ có một chút thay đổi sao cho mỗi khi ai đó gửi lên thì ta sẽ add các message vào chatHistoryList
 ```java
 @Controller
 public class ChatController {
