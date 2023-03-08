@@ -15,10 +15,10 @@ Ta chỉnh sửa phần lấy giá trị channel ở **chat.js** để lấy gi�
 channel = document.getElementById('channel').value;
 ```
 Kết quả <br/><br/>
-![Result 1](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-1.PNG)
+![Result 1](src/main/resources/static/img/image-1.PNG)
 
 Kết quả message khi được lưu vào Redis <br/><br/>
-![Result 6](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-6.PNG)
+![Result 6](src/main/resources/static/img/image-6.PNG)
 
 ## Bài 2
 ### Lưu message vào Kafka
@@ -35,10 +35,10 @@ public ChatMessage sendMessage(@Payload ChatMessage chatMessage
 }
 ```
 Kết quả message xuất ra dạng log <br/><br/>
-![Result 2](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-2.PNG)
+![Result 2](src/main/resources/static/img/image-2.PNG)
 
 Kết quả message khi được lưu vào Kafka <br/><br/>
-![Result 3](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-3.PNG)
+![Result 3](src/main/resources/static/img/image-3.PNG)
 
 ### Docker Desktop
 File Dockerfile
@@ -103,10 +103,10 @@ public String deleteTopic(String name) throws ExecutionException, InterruptedExc
 }
 ```
 Tạo topic mới thông qua phương thức POST <br/><br/>
-![Result 4](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-4.PNG)
+![Result 4](src/main/resources/static/img/image-4.PNG)
 
 Kết quả sau khi tạo topic mới <br/><br/>
-![Result 5](https://github.com/Lucky-Star-999/likelion-training/blob/main/practice/practice-week-10-3/src/main/resources/static/img/image-5.PNG)
+![Result 5](src/main/resources/static/img/image-5.PNG)
 
 
 
