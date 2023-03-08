@@ -31,7 +31,8 @@ function connect(event) {
     event.preventDefault();
 }
 function onConnected() {
-    channel = document.querySelector('input[name="channel"]:checked').value;
+    //channel = document.querySelector('input[name="channel"]:checked').value;
+    channel = document.getElementById('channel').value;
     // Subscribe to the Public Topic
     stompClient.subscribe("/topic/" + channel, function (message) {
         generateMessage(JSON.parse(message.body));
